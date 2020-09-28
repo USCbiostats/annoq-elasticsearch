@@ -1,33 +1,29 @@
-from elasticsearch import Elasticsearch
-from elasticsearch import helpers
+'''
+usage: convert_to_json.py <gzfile>.gz [folder]
+
+it will convert gz file into multiple json files and put them in ./json/[folder/]<gzfile>/1 ./json/[folder/]<gzfile>/2...
+
+'''
 import fileinput
 import pickle
 from utils import id_gen
-from collections import deque
 import sys
 import time
-from setup_es import *
-
-
+import gzip
+import os
+import shutil
+import json
 
 def init_find_error():
     err_file = open("log_import_error","w")
-    def t(es, da):
+    def t(da):
          for i in da:
-             try: 
-                 es.index(id=i['_id'], index=i['_index'], body=i['_source'])
-             except: 
-                 err_file.write( str(i) + "\n")
-                 print('import error !')
+             err_file.write( str(i) + "\n")
     return t
 
 
 find_error = init_find_error()
 start_time = time.time()
-if len(sys.argv) > 1:
-    skip = int(sys.argv[1])
-else:
-    skip = 0
 
 def tmp_print(*argv):
     s = ' '.join((str(i) for i in argv))
@@ -50,6 +46,9 @@ def parse_line(l, data_parser, header):
             d[k] = str(line[idx])
     return d
 
+def write_data(f, da):
+    json.dump(da, f)
+    f.close()
 
 
 data = open('data/doc_type.pkl', 'rb')
@@ -66,17 +65,25 @@ header = ''
 count = 0
 da_list = []
 
-def fake(*argv, **karg):
-    pass
-deque = fake
-def helper():
-    h = helpers.streaming_bulk
-helper = helpers.parallel_bulk
-skipped = 0
-for i in sys.stdin:
-    if skipped < skip:
-        skipped += 1
-        continue
+try:
+    os.mkdir('json')
+    print("make new json directory\n")
+except:
+    print('json path exists\n')
+
+in_filename = sys.argv[1]
+if len(sys.argv) > 2:
+    folder = sys.argv[2] + '/'
+else:
+    folder = ''
+out_path = './json/' + folder + in_filename.split('/')[-1].split('.')[0] + '/'
+os.makedirs(out_path, exist_ok=True)
+
+f = gzip.open(in_filename, mode='rb')
+out_file_name = '1'
+
+for i in f:
+    i = i.decode()
     count += 1
     if not header:
         header = i.rstrip().split("\t")
@@ -95,19 +102,12 @@ for i in sys.stdin:
         da_list.append(data)
     except:
         error.write(i)
-    if count % 5000 == 0:
-        try:
-            h = helper(es, da_list, chunk_size=500 )
-            deque(h, maxlen=0)
-        except:
-            find_error(es, da_list)
+    if count % 50000 == 0:
+        write_data(open(out_path + out_file_name + '.json', 'w'), da_list)
+        out_file_name = str(int(out_file_name) + 1)
         da_list = []
         tmp_print("import {}".format(count), "spend time:", time.time() - start_time, "s")
-try:
-    h = helper(es, da_list, chunk_size=500 )
-    deque(h, maxlen=0)
-except:
-    find_error(es, da_list)
+write_data(open(out_path + out_file_name + '.json', 'w'), da_list)
 print("")
 print("import record ", count)
 print("used time", time.time() - start_time,"s")
