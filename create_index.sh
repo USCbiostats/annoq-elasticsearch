@@ -1,2 +1,12 @@
-host="https://8b9c0d0c1d8d421e8a98f56bc8cc7578.us-west-1.aws.found.io:9243"
-curl -XPUT $host/vs-index
+host="http://bioghost2.usc.edu:9200"
+
+curl -X PUT $host/vs-index -H 'Content-Type: application/json' -d'
+{
+  "settings": {
+    "number_of_shards": 10,
+    "number_of_replicas" : 0,
+    "refresh_interval" : -1
+  }
+}
+'
+
