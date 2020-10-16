@@ -13,17 +13,15 @@ def load_json(directory):
         for name in files:
             if name.endswith('.json'):
                 print(os.path.join(root, name))
-                print("- %s seconds ---" % (time.time() - start_time))
+               # print("- %s seconds ---" % (time.time() - start_time))
                 with open(os.path.join(root, name), 'r') as open_file:
                     parser = ijson.parse(open_file)
                     for value in ijson.items(parser, 'item'):
                         yield value
 
-start_time = time.time()
+def bulk_load(directory):
 
-for success, info in helpers.parallel_bulk(es, load_json( sys.argv[1]), index=ES_INDEX, chunk_size=10000, request_timeout=200):
-    print(info) 
-    if not success:
-        print('A document failed:', info)
+    for success, info in helpers.parallel_bulk(es, load_json(directory), index=ES_INDEX, chunk_size=10000, request_timeout=200):
+        if not success:
+            print('A document failed:', info)
 
-print("-- %s seconds ---" % (time.time() - start_time)) 
