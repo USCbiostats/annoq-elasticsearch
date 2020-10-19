@@ -25,3 +25,6 @@ def bulk_load(directory):
         if not success:
             print('A document failed:', info)
 
+if __name__ == "__main__": 
+    in_folder = sys.argv[1]
+    bulk_load(in_folder)
