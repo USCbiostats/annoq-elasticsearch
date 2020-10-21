@@ -88,42 +88,21 @@ services:
     volumes:
       - data05:/usr/share/elasticsearch/data
     network_mode: host
-  logstash:
-    image: docker.elastic.co/logstash/logstash:7.9.1
-    ports:
-      - "5000:5000"
-      - "9600:9600"
-    configs:
-      - source: logstash_config
-        target: /usr/share/logstash/config/logstash.yml
-      - source: logstash_pipeline
-        target: /usr/share/logstash/pipeline/logstash.conf
-    environment:
-      LS_JAVA_OPTS: "-Xms16g -Xmx16g"
-    network_mode: host
-    deploy:
-      mode: replicated
-      replicas: 0
+
   kibana:
     image: docker.elastic.co/kibana/kibana:7.9.1
+    container_name: kibana
     ports:
       - "5601:5601"
     environment:
-      ELASTICSEARCH_URL: http://es01:9200
+      SERVER_NAME: kibana
       ELASTICSEARCH_HOSTS: http://es01:9200
     configs:
       - source: kibana_config
         target: /usr/share/kibana/config/kibana.yml
     network_mode: host
-    deploy:
-      mode: replicated
-      replicas: 1
 
 configs:
-  logstash_config:
-    file: ./logstash/config/logstash.yml
-  logstash_pipeline:
-    file: ./logstash/pipeline/logstash.conf
   kibana_config:
     file: ./kibana/config/kibana.yml
 
