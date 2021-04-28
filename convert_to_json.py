@@ -11,18 +11,45 @@ import sys
 import time
 import gzip
 import os
+import argparse
 import shutil
 import json
 import shutil
 
 
-in_folder = sys.argv[1]
-if len(sys.argv) > 2:
-    out_folder = sys.argv[2] + '/'
-else:
-    out_folder = ''
+def main():
+    parser = parse_arguments()
+    input_dir = parser.input_dir
+    output_dir = parser.output_dir
+    es_index = parser.es_index
 
-work_directory = 'temp_work'
+    create_working_dir(output_dir)
+
+    for root, dirs, files in os.walk(input_dir, topdown=False):
+        for name in files:
+            if name.endswith('.gz'):
+                filepath = os.path.join(root, name)
+                print(filepath)
+                convert_file(filepath, output_dir, es_index)
+                print("finished ", filepath, time.time() - start_time, "s")
+              
+    print("")
+    print("used time", time.time() - start_time, "s")
+
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Make json files for easy ingest',
+                                     epilog='Make json from!')
+    parser.add_argument('-i', '--input', dest='input_dir', required=True,
+                        help='Input .gz folder')
+    parser.add_argument('-o', '--output', dest='output_dir', required=True,
+                        help='Output folder')
+    parser.add_argument('--es_index', dest='es_index', required=True,
+                        help='Index (vs-index)')
+   
+    return parser.parse_args()
+
 
 def init_find_error():
     err_file = open("log_import_error", "w")
@@ -33,18 +60,11 @@ def init_find_error():
     return t
 
 
-find_error = init_find_error()
-start_time = time.time()
-
-
 def tmp_print(*argv):
     s = ' '.join((str(i) for i in argv))
     print('\b'*tmp_print.l + ' '*tmp_print.l, end='\r', flush=True)
     print(s, end='', flush=True)
     tmp_print.l = len(s)
-
-
-tmp_print.l = 0
 
 
 def parse_line(l, data_parser, header):
@@ -83,7 +103,7 @@ def delete_working_dir(directory):
         print('folder not removed\n')
 
 
-def convert_file(in_filename, work_dir=work_directory):   
+def convert_file(in_filename, work_dir, es_index):   
     with open('data/doc_type.pkl', 'rb') as data:
         dtype = pickle.load(data)
 
@@ -98,7 +118,7 @@ def convert_file(in_filename, work_dir=work_directory):
     count = 0
     header = ''
     da_list = []
-    out_path = './' + work_directory+ '/' + out_folder + \
+    out_path = './' + work_dir + '/'+\
         in_filename.split('/')[-1].split('.')[0] + '/'
     os.makedirs(out_path, exist_ok=True)
 
@@ -112,13 +132,13 @@ def convert_file(in_filename, work_dir=work_directory):
             header = i.rstrip().split("\t")
             continue
         data = {
-            "_index": "vs-index",
+            "_index": es_index,
             "_id": id_gen(i),
             "_source": parse_line(i, data_parser, header)
         }
         try:
             data = {
-                "_index": "vs-index",
+                "_index": es_index,
                 "_id": id_gen(i),
                 "_source": parse_line(i, data_parser, header)
             }
@@ -138,14 +158,11 @@ def convert_file(in_filename, work_dir=work_directory):
 
 
 if __name__=='__main__':
-    create_working_dir(work_directory)
-    for root, dirs, files in os.walk(in_folder, topdown=False):
-        for name in files:
-            if name.endswith('.gz'):
-                filepath = os.path.join(root, name)
-                print(filepath)
-                convert_file(filepath)
-                print("finished ", filepath, time.time() - start_time, "s")
-              
-    print("")
-    print("used time", time.time() - start_time, "s")
+    find_error = init_find_error()
+    start_time = time.time()
+    tmp_print.l = 0
+
+    main()
+    
+    find_error = init_find_error()
+    start_time = time.time()
