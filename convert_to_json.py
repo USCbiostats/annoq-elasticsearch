@@ -71,7 +71,7 @@ def parse_line(l, data_parser, header):
     line = l.rstrip().split("\t")
     d = {}
     for idx in range(len(header)):
-        if line[idx] == ".":
+        if idx>=len(line) or line[idx] == ".":
             continue
         k = header[idx]
         try:
