@@ -1,5 +1,5 @@
 [{
-        "_index": "vs-index",
+        "_index": "annoq-test",
         "_id": "X:60014T>C",
         "_source": {
             "chr": "X",
@@ -50,7 +50,7 @@
         }
     },
     {
-        "_index": "vs-index",
+        "_index": "annoq-test",
         "_id": "X:60014T>G",
         "_source": {
             "chr": "X",
@@ -103,7 +103,7 @@
         }
     },
     {
-        "_index": "vs-index",
+        "_index": "annoq-test",
         "_id": "X:60017C>T",
         "_source": {
             "chr": "X",
@@ -155,7 +155,7 @@
         }
     },
     {
-        "_index": "vs-index",
+        "_index": "annoq-test",
         "_id": "X:60060G>C",
         "_source": {
             "chr": "X",

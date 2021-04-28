@@ -46,7 +46,7 @@ def parse_arguments():
     parser.add_argument('-o', '--output', dest='output_dir', required=True,
                         help='Output folder')
     parser.add_argument('--es_index', dest='es_index', required=True,
-                        help='Index (vs-index)')
+                        help='Index (annoq-test)')
    
     return parser.parse_args()
 
