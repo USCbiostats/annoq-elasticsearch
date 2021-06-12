@@ -15,22 +15,34 @@ import argparse
 import shutil
 import json
 import shutil
-from os import path as ospath
+
 
 def main():
     parser = parse_arguments()
-    input_file = parser.input_file
+    input_dir = parser.input_dir
     output_dir = parser.output_dir
     es_index = parser.es_index
-    
-    convert_file(input_file, output_dir, es_index)
-    print("finished ",  time.time() - start_time, "s")
+
+    create_working_dir(output_dir)
+
+    for root, dirs, files in os.walk(input_dir, topdown=False):
+        for name in files:
+            if name.endswith('.gz'):
+                filepath = os.path.join(root, name)
+                print(filepath)
+                convert_file(filepath, output_dir, es_index)
+                print("finished ", filepath, time.time() - start_time, "s")
+              
+    print("")
+    print("used time", time.time() - start_time, "s")
+
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-i', '--input', dest='input_file', required=True,
-                        help='Input folder')
+    parser = argparse.ArgumentParser(description='Make json files for easy ingest',
+                                     epilog='Make json from!')
+    parser.add_argument('-i', '--input', dest='input_dir', required=True,
+                        help='Input .gz folder')
     parser.add_argument('-o', '--output', dest='output_dir', required=True,
                         help='Output folder')
     parser.add_argument('--es_index', dest='es_index', required=True,
@@ -48,10 +60,6 @@ def init_find_error():
     return t
 
 
-def write_to_json(filepath, jsons):
-    with open(filepath, "w",  encoding='utf-8') as f:
-        json.dump(jsons, f)
-
 def tmp_print(*argv):
     s = ' '.join((str(i) for i in argv))
     print('\b'*tmp_print.l + ' '*tmp_print.l, end='\r', flush=True)
@@ -59,8 +67,11 @@ def tmp_print(*argv):
     tmp_print.l = len(s)
 
 
-def parse_line(line, data_parser, header):
+def parse_line(l, data_parser, header):
+    line = l.rstrip().split("\t")
     d = {}
+    if len(header) != len(line):
+        print(len(header), len(line))
     for idx in range(len(header)):
         if idx>=len(line) or line[idx] == ".":            
             continue
@@ -71,6 +82,11 @@ def parse_line(line, data_parser, header):
             print('parse error:', k, line[idx], data_parser.get(k, str))
             d[k] = str(line[idx])
     return d
+
+
+def write_data(f, da):
+    json.dump(da, f)
+    f.close()
 
 
 def create_working_dir(directory):
@@ -89,7 +105,7 @@ def delete_working_dir(directory):
         print('folder not removed\n')
 
 
-def convert_file(in_filepath, out_dir, es_index):   
+def convert_file(in_filename, work_dir, es_index):   
     with open('data/doc_type.pkl', 'rb') as data:
         dtype = pickle.load(data)
 
@@ -104,43 +120,43 @@ def convert_file(in_filepath, out_dir, es_index):
     count = 0
     header = ''
     da_list = []
-   
-    with open(in_filepath) as fp:
-        row = fp.readline().rstrip()
-        out_filename = 1        
-        header = row.split("\t")
+    out_path = './' + work_dir + '/'+\
+        in_filename.split('/')[-1].split('.')[0] + '/'
+    os.makedirs(out_path, exist_ok=True)
 
-        while row:
-            row = fp.readline().rstrip()   
-            if not row:
-                continue
-                 
-            cols = row.split("\t")
-            count += 1
+    f = gzip.open(in_filename, mode='rb')
+    out_file_name = '1'
+
+    for i in f:
+        i = i.decode()
+        count += 1
+        if not header:
+            header = i.rstrip().split("\t")
+            continue
+        data = {
+            "_index": es_index,
+            "_id": id_gen(i),
+            "_source": parse_line(i, data_parser, header)
+        }
+        try:
             data = {
                 "_index": es_index,
-                "_id": id_gen(cols),
-                "_source": parse_line(cols, data_parser, header)
+                "_id": id_gen(i),
+                "_source": parse_line(i, data_parser, header)
             }
-            try:
-                data = {
-                    "_index": es_index,
-                    "_id": id_gen(cols),
-                    "_source": parse_line(cols, data_parser, header)
-                }
-                da_list.append(data)
-            except:
-                error.write(cols)
-            if count % 50000 == 0:
-                write_to_json(ospath.join(out_dir, str(out_filename) + '.json'), da_list)
-                out_filename += 1
-                da_list = []
-                tmp_print("import {}".format(count), "spend time:",
-                        time.time() - start_time, "s")
-        write_to_json(ospath.join(out_dir, str(out_filename) + '.json'), da_list)
-       
-        print("import records ", count)
-        print("used time", time.time() - start_time, "s")
+            da_list.append(data)
+        except:
+            error.write(i)
+        if count % 50000 == 0:
+            write_data(open(out_path + out_file_name + '.json', 'w'), da_list)
+            out_file_name = str(int(out_file_name) + 1)
+            da_list = []
+            tmp_print("import {}".format(count), "spend time:",
+                      time.time() - start_time, "s")
+    write_data(open(out_path + out_file_name + '.json', 'w'), da_list)
+    print("")
+    print("import record ", count)
+    print("used time", time.time() - start_time, "s")
 
 
 if __name__=='__main__':

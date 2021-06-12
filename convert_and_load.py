@@ -4,16 +4,9 @@ usage: convert_to_json.py <gzfile>.gz [folder]
 it will convert gz file into multiple json files and put them in ./json/[folder/]<gzfile>/1 ./json/[folder/]<gzfile>/2...
 
 '''
-import fileinput
-import pickle
-from utils import id_gen
 import sys
 import time
-import gzip
 import os
-import shutil
-import json
-import shutil
 from convert_to_json import convert_file, create_working_dir, delete_working_dir
 from index_es_json import bulk_load
 

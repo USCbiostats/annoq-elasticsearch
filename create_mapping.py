@@ -1,7 +1,3 @@
-from elasticsearch import Elasticsearch
-from elasticsearch import helpers
-import fileinput
-import pickle
 import json
 from setup_es import *
 
