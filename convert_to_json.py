@@ -50,7 +50,7 @@ def init_find_error():
 
 def write_to_json(filepath, jsons):
     with open(filepath, "w",  encoding='utf-8') as f:
-        json.dump(jsons, f)
+        json.dump(jsons, f, indent=4)
 
 def tmp_print(*argv):
     s = ' '.join((str(i) for i in argv))
