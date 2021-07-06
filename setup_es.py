@@ -6,4 +6,4 @@ es = Elasticsearch(
     timeout=60
 )
 
-ES_INDEX = 'vs-index'
+ES_INDEX = 'annoq-test'

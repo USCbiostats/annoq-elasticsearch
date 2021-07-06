@@ -82,13 +82,13 @@ for i in sys.stdin:
         header = i.rstrip().split("\t")
         continue
     data = {
-        "_index": "vs-index",
+        "_index": "annoq-test",
         "_id": id_gen(i),
         "_source": parse_line(i, data_parser, header)
     }
     try:
         data = {
-        "_index": "vs-index",
+        "_index": "annoq-test",
         "_id": id_gen(i),
         "_source": parse_line(i, data_parser, header)
     }
