@@ -1,9 +1,9 @@
 #!/bin/bash 
 
 
-in_dir='output/hrc_sample'
+in_dir='./../WGSA_add/output/hrc_sample'
 out_dir='output/hrc_es_jsons'
-slurm_dir='slurm_jsons'
+slurm_dir='slurm'
 
 #local testing
 #in_dir='./../annoq-data/hrc-test'
