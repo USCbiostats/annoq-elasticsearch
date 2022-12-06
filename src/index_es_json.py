@@ -4,7 +4,7 @@ import ijson
 import os
 import sys
 import pprint
-from setup_es import es, ES_INDEX
+from src.config.es import es
 #run python3 index_es_json test_input_json
 
 import logging
