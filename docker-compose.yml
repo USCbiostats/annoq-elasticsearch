@@ -1,7 +1,7 @@
-version: "3.3"
+version: "3.8"
 services:
   es01:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.5.1
     container_name: es01
     environment:
       - node.name=es01
@@ -10,18 +10,20 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03,es04,es05
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms16g -Xmx16g"
+      - xpack.security.enabled=false
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
       - data01:/usr/share/elasticsearch/data
-    network_mode: host
+    networks:
+      - elastic
     ports:
       - 9200:9200
       - 9300:9300
   es02:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.5.1
     container_name: es02
     environment:
       - node.name=es02
@@ -30,15 +32,17 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03,es04,es05
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms16g -Xmx16g"
+      - xpack.security.enabled=false
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
       - data02:/usr/share/elasticsearch/data
-    network_mode: host
+    networks:
+      - elastic
   es03:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.5.1
     container_name: es03
     environment:
       - node.name=es03
@@ -47,15 +51,17 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03,es04,es05
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms16g -Xmx16g"
+      - xpack.security.enabled=false
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
       - data03:/usr/share/elasticsearch/data
-    network_mode: host
+    networks:
+      - elastic
   es04:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.5.1
     container_name: es04
     environment:
       - node.name=es04
@@ -64,15 +70,17 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03,es04,es05
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms16g -Xmx16g"
+      - xpack.security.enabled=false
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
       - data04:/usr/share/elasticsearch/data
-    network_mode: host
+    networks:
+      - elastic
   es05:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.5.1
     container_name: es05
     environment:
       - node.name=es05
@@ -81,26 +89,29 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03,es04,es05
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms16g -Xmx16g"
+      - xpack.security.enabled=false
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
       - data05:/usr/share/elasticsearch/data
-    network_mode: host
+    networks:
+      - elastic
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.9.1
     container_name: kibana
     ports:
       - "5601:5601"
+    networks:
+      - elastic
     environment:
       SERVER_NAME: kibana
       ELASTICSEARCH_HOSTS: http://es01:9200
     configs:
       - source: kibana_config
         target: /usr/share/kibana/config/kibana.yml
-    network_mode: host
 
 configs:
   kibana_config:
@@ -117,3 +128,8 @@ volumes:
     driver: local
   data05:
     driver: local
+
+networks:
+  elastic:
+    driver: bridge
+    external: true

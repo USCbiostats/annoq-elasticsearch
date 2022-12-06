@@ -5,7 +5,7 @@ Scripts for load data and Elasticsearch mapping of AnnoQ
 ## Dependents on two data files
 
 * ./data/doc_type.pkl
-* ./data/vs_index_mapping.json
+* ./data/annoq_mapping.json
 
 ## Running 
 
