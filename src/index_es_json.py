@@ -1,3 +1,4 @@
+import load_env
 import time
 from elasticsearch import helpers
 import ijson
