@@ -10,5 +10,4 @@ class Settings(BaseSettings):
     PROJECT_VERSION: str = "0.2.0"
 
 
-
 settings = Settings()

@@ -20,7 +20,7 @@ logging.basicConfig(
 
 def load_json(directory):
     start_time = time.time()
-    for root, dirs, files in os.walk(directory, topdown=False):
+    for root, dirs, files in os.walk(directory, topdown=True):
         for name in files:
             if name.endswith('.json'):
                 print(os.path.join(root, name))
@@ -32,19 +32,19 @@ def load_json(directory):
 
 def bulk_load_parallel(directory):
 
-    for success, info in helpers.parallel_bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, thread_count=20, chunk_size=10000, request_timeout=200):
+    for success, info in helpers.parallel_bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, thread_count=10, chunk_size=5000, max_retries=10, request_timeout=200):
         if not success:
             logging.error('A document failed:', info)
 
 
 def bulk_load(directory):
    
-    helpers.bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, chunk_size=10000, request_timeout=200)
+    helpers.bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, chunk_size=5000, request_timeout=1000)
  
 
 def bulk_load_streaming(directory):
 
-    for success, info in helpers.streaming_bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, chunk_size=10000, request_timeout=200):
+    for success, info in helpers.streaming_bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, chunk_size=5000, request_timeout=1000):
         if not success:
             logging.error('A document failed:', info)
 

@@ -1,4 +1,4 @@
-import json
+import load_env
 from src.config.settings import settings
 from src.config.es import es
 from src.utils import load_json
