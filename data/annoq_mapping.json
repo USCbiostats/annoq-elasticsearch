@@ -1,5 +1,2519 @@
 {
   "properties": {
+    "chr": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "pos": {
+      "type": "long"
+    },
+    "ref": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "alt": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "rs_dbSNP151": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_genes": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "enhancer_linked_enhancer": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_Closest_gene(intergenic_only)": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_Effect": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_Exon_Rank": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_HGVSc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_Closest_gene(intergenic_only)": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_Effect": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_Exon_Rank": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_HGVSc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_refseq_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_Closest_gene(intergenic_only)": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_Effect": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_Exon_Rank": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_HGVSc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ANNOVAR_ucsc_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_0_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_1000_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "flanking_20000_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_canonical": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Amino_Acid_Change": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_CANONICAL": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_CCDS": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_CDS_position": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Codon_Change_or_Distance": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Consequence": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Exon_or_Intron_Rank": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Gene_Name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_HGVSc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_LoF": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_LoF_filter": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_LoF_flags": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_LoF_info": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Protein_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Protein_position": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_STRAND": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_SWISSPROT": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_cDNA_position": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_ensembl_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Amino_Acid_Change": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_CANONICAL": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_CDS_position": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Codon_Change_or_Distance": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Consequence": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Exon_or_Intron_Rank": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Gene_Name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_HGVSc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_LoF": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_LoF_filter": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_LoF_flags": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_LoF_info": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Protein_ID(ENSP)": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Protein_position": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_STRAND": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_cDNA_position": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "VEP_refseq_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_CDS_position/CDS_len": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Distance_to_feature": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Effect": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Effect_impact": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Exon_or_intron_rank/total": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Gene_name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_HGVSc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_LOF/NMD": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_LOF/NMD_gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_LOF/NMD_gene_name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_LOF/NMD_num_transcripts_affected": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_LOF/NMD_percent_transcripts_affected": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Protein_position/Protein_len": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Sequence_feature": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Sequence_feature_impact": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_TF_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_TF_binding_effect": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_TF_name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Transcript_biotype": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_Warnings": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_cDNA_position/cDNA_len": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_ensembl_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_CDS_position/CDS_len": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Distance_to_feature": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Effect": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Effect_impact": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Exon_or_intron_rank/total": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_biological_process_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_cellular_component_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_molecular_function_complete_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Gene_name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_HGVSc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_LOF/NMD": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_LOF/NMD_gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_LOF/NMD_gene_name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_LOF/NMD_num_transcripts_affected": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_LOF/NMD_percent_transcripts_affected": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Protein_position/Protein_len": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_REACTOME_pathway_list": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Sequence_feature": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Sequence_feature_impact": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Transcript_biotype": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_Warnings": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_cDNA_position/cDNA_len": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SnpEff_refseq_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
     "1000Gp3_AC": {
       "type": "long"
     },
@@ -36,474 +2550,6 @@
     "1000Gp3_SAS_AF": {
       "type": "float"
     },
-    "ALSPAC_AC": {
-      "type": "long"
-    },
-    "ALSPAC_AF": {
-      "type": "float"
-    },
-    "ALSPAC_AN": {
-      "type": "long"
-    },
-    "ANNOVAR_ensembl_Closest_gene(intergenic_only)": {
-      "type": "text"
-    },
-    "ANNOVAR_ensembl_Effect": {
-      "type": "text"
-    },
-    "ANNOVAR_ensembl_Exon_Rank": {
-      "type": "text"
-    },
-    "ANNOVAR_ensembl_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_Gene_ID": {
-      "type": "text"
-    },
-    "ANNOVAR_ensembl_HGVSc": {
-      "type": "text"
-    },
-    "ANNOVAR_ensembl_HGVSp": {
-      "type": "text"
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_ensembl_Transcript_ID": {
-      "type": "text"
-    },
-    "ANNOVAR_ensembl_summary": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_Closest_gene(intergenic_only)": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_Effect": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_Exon_Rank": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_Gene_ID": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_HGVSc": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_HGVSp": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "ANNOVAR_refseq_Transcript_ID": {
-      "type": "text"
-    },
-    "ANNOVAR_refseq_summary": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_Closest_gene(intergenic_only)": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_Effect": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_Exon_Rank": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_Gene_ID": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_HGVSc": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_HGVSp": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_Transcript_ID": {
-      "type": "text"
-    },
-    "ANNOVAR_ucsc_summary": {
-      "type": "text"
-    },
-    "APPRIS": {
-      "type": "text"
-    },
-    "Aloft_Confidence": {
-      "type": "text"
-    },
-    "Aloft_Fraction_transcripts_affected": {
-      "type": "text"
-    },
-    "Aloft_pred": {
-      "type": "text"
-    },
-    "Aloft_prob_Dominant": {
-      "type": "text"
-    },
-    "Aloft_prob_Recessive": {
-      "type": "text"
-    },
-    "Aloft_prob_Tolerant": {
-      "type": "text"
-    },
-    "CADD_phred": {
-      "type": "float"
-    },
-    "CADD_raw": {
-      "type": "float"
-    },
-    "CADD_raw_rankscore": {
-      "type": "float"
-    },
-    "COSMIC_CNT": {
-      "type": "long"
-    },
-    "COSMIC_ID": {
-      "type": "text"
-    },
-    "DEOGEN2_pred": {
-      "type": "text"
-    },
-    "DEOGEN2_rankscore": {
-      "type": "text"
-    },
-    "DEOGEN2_score": {
-      "type": "text"
-    },
-    "ENCODE_Dnase_cells": {
-      "type": "long"
-    },
-    "ENCODE_Dnase_score": {
-      "type": "long"
-    },
-    "ENCODE_TFBS": {
-      "type": "text"
-    },
-    "ENCODE_TFBS_cells": {
-      "type": "text"
-    },
-    "ENCODE_TFBS_score": {
-      "type": "text"
-    },
-    "ENCODE_annotated": {
-      "type": "text"
-    },
     "ESP6500_AA_AC": {
       "type": "long"
     },
@@ -521,27 +2567,6 @@
     },
     "ESP6500_EA_AF": {
       "type": "float"
-    },
-    "Ensembl_Regulatory_Build_ID": {
-      "type": "text"
-    },
-    "Ensembl_Regulatory_Build_TFBS": {
-      "type": "text"
-    },
-    "Ensembl_Regulatory_Build_TFBS_matrix": {
-      "type": "text"
-    },
-    "Ensembl_Regulatory_Build_feature_type": {
-      "type": "text"
-    },
-    "Ensembl_geneid": {
-      "type": "text"
-    },
-    "Ensembl_proteinid": {
-      "type": "text"
-    },
-    "Ensembl_transcriptid": {
-      "type": "text"
     },
     "ExAC_AC": {
       "type": "long"
@@ -571,13 +2596,25 @@
       "type": "long"
     },
     "ExAC_EAS_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "ExAC_FIN_AC": {
       "type": "long"
     },
     "ExAC_FIN_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "ExAC_NFE_AC": {
       "type": "long"
@@ -591,708 +2628,6 @@
     "ExAC_SAS_AF": {
       "type": "float"
     },
-    "FANTOM5_CAGE_peak_permissive": {
-      "type": "text"
-    },
-    "FANTOM5_CAGE_peak_robust": {
-      "type": "text"
-    },
-    "FANTOM5_enhancer_differentially_expressed_tissue_cell": {
-      "type": "text"
-    },
-    "FANTOM5_enhancer_expressed_tissue_cell": {
-      "type": "text"
-    },
-    "FANTOM5_enhancer_permissive": {
-      "type": "text"
-    },
-    "FANTOM5_enhancer_robust": {
-      "type": "text"
-    },
-    "FANTOM5_enhancer_target": {
-      "type": "text"
-    },
-    "FATHMM_converted_rankscore": {
-      "type": "text"
-    },
-    "FATHMM_pred": {
-      "type": "text"
-    },
-    "FATHMM_score": {
-      "type": "text"
-    },
-    "GENCODE_basic": {
-      "type": "text"
-    },
-    "GERP_NR": {
-      "type": "float"
-    },
-    "GERP_RS": {
-      "type": "float"
-    },
-    "GERP_RS_rankscore": {
-      "type": "float"
-    },
-    "GRASP_PMID": {
-      "type": "text"
-    },
-    "GRASP_ancestry": {
-      "type": "text"
-    },
-    "GRASP_p-value": {
-      "type": "text"
-    },
-    "GRASP_phenotype": {
-      "type": "text"
-    },
-    "GRASP_platform": {
-      "type": "text"
-    },
-    "GRASP_rs": {
-      "type": "long"
-    },
-    "GTEx_V7_gene": {
-      "type": "text"
-    },
-    "GTEx_V7_tissue": {
-      "type": "text"
-    },
-    "GWAS_catalog_OR": {
-      "type": "float"
-    },
-    "GWAS_catalog_pubmedid": {
-      "type": "text"
-    },
-    "GWAS_catalog_rs": {
-      "type": "text"
-    },
-    "GWAS_catalog_trait": {
-      "type": "text"
-    },
-    "LRT_Omega": {
-      "type": "text"
-    },
-    "LRT_converted_rankscore": {
-      "type": "text"
-    },
-    "LRT_pred": {
-      "type": "text"
-    },
-    "LRT_score": {
-      "type": "text"
-    },
-    "M-CAP_pred": {
-      "type": "text"
-    },
-    "M-CAP_rankscore": {
-      "type": "text"
-    },
-    "M-CAP_score": {
-      "type": "text"
-    },
-    "MPC_rankscore": {
-      "type": "text"
-    },
-    "MPC_score": {
-      "type": "text"
-    },
-    "MVP_rankscore": {
-      "type": "text"
-    },
-    "MVP_score": {
-      "type": "text"
-    },
-    "MetaLR_pred": {
-      "type": "text"
-    },
-    "MetaLR_rankscore": {
-      "type": "text"
-    },
-    "MetaLR_score": {
-      "type": "text"
-    },
-    "MetaSVM_pred": {
-      "type": "text"
-    },
-    "MetaSVM_rankscore": {
-      "type": "text"
-    },
-    "MetaSVM_score": {
-      "type": "text"
-    },
-    "Motif_breaking": {
-      "type": "text"
-    },
-    "MutPred_AAchange": {
-      "type": "text"
-    },
-    "MutPred_Top5features": {
-      "type": "text"
-    },
-    "MutPred_protID": {
-      "type": "text"
-    },
-    "MutPred_rankscore": {
-      "type": "text"
-    },
-    "MutPred_score": {
-      "type": "text"
-    },
-    "MutationAssessor_pred": {
-      "type": "text"
-    },
-    "MutationAssessor_rankscore": {
-      "type": "text"
-    },
-    "MutationAssessor_score": {
-      "type": "text"
-    },
-    "MutationTaster_AAE": {
-      "type": "text"
-    },
-    "MutationTaster_converted_rankscore": {
-      "type": "text"
-    },
-    "MutationTaster_model": {
-      "type": "text"
-    },
-    "MutationTaster_pred": {
-      "type": "text"
-    },
-    "MutationTaster_score": {
-      "type": "text"
-    },
-    "ORegAnno_PMID": {
-      "type": "text"
-    },
-    "ORegAnno_type": {
-      "type": "text"
-    },
-    "PROVEAN_converted_rankscore": {
-      "type": "text"
-    },
-    "PROVEAN_pred": {
-      "type": "text"
-    },
-    "PROVEAN_score": {
-      "type": "text"
-    },
-    "PrimateAI_pred": {
-      "type": "text"
-    },
-    "PrimateAI_rankscore": {
-      "type": "text"
-    },
-    "PrimateAI_score": {
-      "type": "text"
-    },
-    "RegulomeDB_motif": {
-      "type": "text"
-    },
-    "RegulomeDB_score": {
-      "type": "text"
-    },
-    "Reliability_index": {
-      "type": "text"
-    },
-    "SIFT4G_converted_rankscore": {
-      "type": "text"
-    },
-    "SIFT4G_pred": {
-      "type": "text"
-    },
-    "SIFT4G_score": {
-      "type": "text"
-    },
-    "SIFT_converted_rankscore": {
-      "type": "text"
-    },
-    "SIFT_pred": {
-      "type": "text"
-    },
-    "SIFT_score": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_CDS_position/CDS_len": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Distance_to_feature": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Effect": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Effect_impact": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Exon_or_intron_rank/total": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_Gene_ID": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Gene_name": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_HGVSc": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_HGVSp": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_LOF/NMD": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_LOF/NMD_gene_ID": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_LOF/NMD_gene_name": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_LOF/NMD_num_transcripts_affected": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_LOF/NMD_percent_transcripts_affected": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_Protein_position/Protein_len": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_ensembl_Sequence_feature": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Sequence_feature_impact": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_TF_ID": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_TF_binding_effect": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_TF_name": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Transcript_ID": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Transcript_biotype": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_Warnings": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_cDNA_position/cDNA_len": {
-      "type": "text"
-    },
-    "SnpEff_ensembl_summary": {
-      "type": "text"
-    },
-    "SnpEff_refseq_CDS_position/CDS_len": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Distance_to_feature": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Effect": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Effect_impact": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Exon_or_intron_rank/total": {
-      "type": "text"
-    },
-    "SnpEff_refseq_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_Gene_ID": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Gene_name": {
-      "type": "text"
-    },
-    "SnpEff_refseq_HGVSc": {
-      "type": "text"
-    },
-    "SnpEff_refseq_HGVSp": {
-      "type": "text"
-    },
-    "SnpEff_refseq_LOF/NMD": {
-      "type": "text"
-    },
-    "SnpEff_refseq_LOF/NMD_gene_ID": {
-      "type": "text"
-    },
-    "SnpEff_refseq_LOF/NMD_gene_name": {
-      "type": "text"
-    },
-    "SnpEff_refseq_LOF/NMD_num_transcripts_affected": {
-      "type": "text"
-    },
-    "SnpEff_refseq_LOF/NMD_percent_transcripts_affected": {
-      "type": "text"
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_Protein_position/Protein_len": {
-      "type": "text"
-    },
-    "SnpEff_refseq_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "SnpEff_refseq_Sequence_feature": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Sequence_feature_impact": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Transcript_ID": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Transcript_biotype": {
-      "type": "text"
-    },
-    "SnpEff_refseq_Warnings": {
-      "type": "text"
-    },
-    "SnpEff_refseq_cDNA_position/cDNA_len": {
-      "type": "text"
-    },
-    "SnpEff_refseq_summary": {
-      "type": "text"
-    },
-    "TSL": {
-      "type": "text"
-    },
-    "TWINSUK_AC": {
-      "type": "long"
-    },
-    "TWINSUK_AF": {
-      "type": "float"
-    },
-    "TWINSUK_AN": {
-      "type": "long"
-    },
-    "TargetScan_context++_score_percentile": {
-      "type": "text"
-    },
     "UK10K_AC": {
       "type": "long"
     },
@@ -1301,1209 +2636,6 @@
     },
     "UK10K_AN": {
       "type": "long"
-    },
-    "UTR3_miRNA_target": {
-      "type": "text"
-    },
-    "Uniprot_acc": {
-      "type": "text"
-    },
-    "Uniprot_entry": {
-      "type": "text"
-    },
-    "VEP_canonical": {
-      "type": "text"
-    },
-    "VEP_ensembl_Amino_Acid_Change": {
-      "type": "text"
-    },
-    "VEP_ensembl_CANONICAL": {
-      "type": "text"
-    },
-    "VEP_ensembl_CCDS": {
-      "type": "text"
-    },
-    "VEP_ensembl_CDS_position": {
-      "type": "text"
-    },
-    "VEP_ensembl_Codon_Change_or_Distance": {
-      "type": "text"
-    },
-    "VEP_ensembl_Consequence": {
-      "type": "text"
-    },
-    "VEP_ensembl_Exon_or_Intron_Rank": {
-      "type": "text"
-    },
-    "VEP_ensembl_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_Gene_ID": {
-      "type": "text"
-    },
-    "VEP_ensembl_Gene_Name": {
-      "type": "text"
-    },
-    "VEP_ensembl_HGVSc": {
-      "type": "text"
-    },
-    "VEP_ensembl_HGVSp": {
-      "type": "text"
-    },
-    "VEP_ensembl_LoF": {
-      "type": "text"
-    },
-    "VEP_ensembl_LoF_filter": {
-      "type": "text"
-    },
-    "VEP_ensembl_LoF_flags": {
-      "type": "text"
-    },
-    "VEP_ensembl_LoF_info": {
-      "type": "text"
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_Protein_ID": {
-      "type": "text"
-    },
-    "VEP_ensembl_Protein_position": {
-      "type": "text"
-    },
-    "VEP_ensembl_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_ensembl_STRAND": {
-      "type": "text"
-    },
-    "VEP_ensembl_SWISSPROT": {
-      "type": "text"
-    },
-    "VEP_ensembl_Transcript_ID": {
-      "type": "text"
-    },
-    "VEP_ensembl_cDNA_position": {
-      "type": "text"
-    },
-    "VEP_ensembl_summary": {
-      "type": "text"
-    },
-    "VEP_refseq_Amino_Acid_Change": {
-      "type": "text"
-    },
-    "VEP_refseq_CANONICAL": {
-      "type": "text"
-    },
-    "VEP_refseq_CDS_position": {
-      "type": "text"
-    },
-    "VEP_refseq_Codon_Change_or_Distance": {
-      "type": "text"
-    },
-    "VEP_refseq_Consequence": {
-      "type": "text"
-    },
-    "VEP_refseq_Exon_or_Intron_Rank": {
-      "type": "text"
-    },
-    "VEP_refseq_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_Gene_ID": {
-      "type": "text"
-    },
-    "VEP_refseq_Gene_Name": {
-      "type": "text"
-    },
-    "VEP_refseq_HGVSc": {
-      "type": "text"
-    },
-    "VEP_refseq_HGVSp": {
-      "type": "text"
-    },
-    "VEP_refseq_LoF": {
-      "type": "text"
-    },
-    "VEP_refseq_LoF_filter": {
-      "type": "text"
-    },
-    "VEP_refseq_LoF_flags": {
-      "type": "text"
-    },
-    "VEP_refseq_LoF_info": {
-      "type": "text"
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_Protein_ID(ENSP)": {
-      "type": "text"
-    },
-    "VEP_refseq_Protein_position": {
-      "type": "text"
-    },
-    "VEP_refseq_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "VEP_refseq_STRAND": {
-      "type": "text"
-    },
-    "VEP_refseq_Transcript_ID": {
-      "type": "text"
-    },
-    "VEP_refseq_cDNA_position": {
-      "type": "text"
-    },
-    "VEP_refseq_summary": {
-      "type": "text"
-    },
-    "aaalt": {
-      "type": "text"
-    },
-    "aapos": {
-      "type": "text"
-    },
-    "aaref": {
-      "type": "text"
-    },
-    "alt": {
-      "type": "text"
-    },
-    "cds_strand": {
-      "type": "text"
-    },
-    "chr": {
-      "type": "text"
-    },
-    "clinvar_MedGen_id": {
-      "type": "text"
-    },
-    "clinvar_OMIM_id": {
-      "type": "text"
-    },
-    "clinvar_Orphanet_id": {
-      "type": "text"
-    },
-    "clinvar_clnsig": {
-      "type": "text"
-    },
-    "clinvar_hgvs": {
-      "type": "text"
-    },
-    "clinvar_id": {
-      "type": "text"
-    },
-    "clinvar_review": {
-      "type": "text"
-    },
-    "clinvar_trait": {
-      "type": "text"
-    },
-    "clinvar_var_source": {
-      "type": "text"
-    },
-    "codon_degeneracy": {
-      "type": "text"
-    },
-    "codonpos": {
-      "type": "text"
-    },
-    "enhancer_linked_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_enhancer": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "enhancer_linked_genes": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "fathmm-MKL_coding_group": {
-      "type": "text"
-    },
-    "fathmm-MKL_coding_pred": {
-      "type": "text"
-    },
-    "fathmm-MKL_coding_rankscore": {
-      "type": "float"
-    },
-    "fathmm-MKL_coding_score": {
-      "type": "float"
-    },
-    "fathmm-MKL_non-coding_group": {
-      "type": "text"
-    },
-    "fathmm-MKL_non-coding_pred": {
-      "type": "text"
-    },
-    "fathmm-MKL_non-coding_rankscore": {
-      "type": "float"
-    },
-    "fathmm-MKL_non-coding_score": {
-      "type": "float"
-    },
-    "fathmm-XF_coding_or_noncoding": {
-      "type": "text"
-    },
-    "fathmm-XF_pred": {
-      "type": "text"
-    },
-    "fathmm-XF_rankscore": {
-      "type": "float"
-    },
-    "fathmm-XF_score": {
-      "type": "float"
-    },
-    "flanking_0_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_0_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_10000_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_protein_class_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_protein_class_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "flanking_20000_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "funseq_noncoding_score": {
-      "type": "long"
-    },
-    "genename": {
-      "type": "text"
     },
     "gnomAD_exomes_AC": {
       "type": "long"
@@ -2542,7 +2674,13 @@
       "type": "long"
     },
     "gnomAD_exomes_ASJ_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_ASJ_AN": {
       "type": "long"
@@ -2554,7 +2692,13 @@
       "type": "long"
     },
     "gnomAD_exomes_EAS_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_EAS_AN": {
       "type": "long"
@@ -2566,7 +2710,13 @@
       "type": "long"
     },
     "gnomAD_exomes_FIN_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_FIN_AN": {
       "type": "long"
@@ -2590,7 +2740,13 @@
       "type": "long"
     },
     "gnomAD_exomes_POPMAX_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_POPMAX_AN": {
       "type": "long"
@@ -2647,7 +2803,13 @@
       "type": "long"
     },
     "gnomAD_exomes_controls_ASJ_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_controls_ASJ_AN": {
       "type": "long"
@@ -2659,7 +2821,13 @@
       "type": "long"
     },
     "gnomAD_exomes_controls_EAS_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_controls_EAS_AN": {
       "type": "long"
@@ -2671,7 +2839,13 @@
       "type": "long"
     },
     "gnomAD_exomes_controls_FIN_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_controls_FIN_AN": {
       "type": "long"
@@ -2695,7 +2869,13 @@
       "type": "long"
     },
     "gnomAD_exomes_controls_POPMAX_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_controls_POPMAX_AN": {
       "type": "long"
@@ -2719,7 +2899,13 @@
       "type": "long"
     },
     "gnomAD_exomes_flag": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_exomes_nhomalt": {
       "type": "long"
@@ -2746,7 +2932,13 @@
       "type": "long"
     },
     "gnomAD_genomes_AMR_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_AMR_AN": {
       "type": "long"
@@ -2761,7 +2953,13 @@
       "type": "long"
     },
     "gnomAD_genomes_ASJ_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_ASJ_AN": {
       "type": "long"
@@ -2773,7 +2971,13 @@
       "type": "long"
     },
     "gnomAD_genomes_EAS_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_EAS_AN": {
       "type": "long"
@@ -2785,7 +2989,13 @@
       "type": "long"
     },
     "gnomAD_genomes_FIN_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_FIN_AN": {
       "type": "long"
@@ -2809,7 +3019,13 @@
       "type": "long"
     },
     "gnomAD_genomes_POPMAX_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_POPMAX_AN": {
       "type": "long"
@@ -2839,7 +3055,13 @@
       "type": "long"
     },
     "gnomAD_genomes_controls_AMR_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_controls_AMR_AN": {
       "type": "long"
@@ -2854,7 +3076,13 @@
       "type": "long"
     },
     "gnomAD_genomes_controls_ASJ_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_controls_ASJ_AN": {
       "type": "long"
@@ -2866,7 +3094,13 @@
       "type": "long"
     },
     "gnomAD_genomes_controls_EAS_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_controls_EAS_AN": {
       "type": "long"
@@ -2878,7 +3112,13 @@
       "type": "long"
     },
     "gnomAD_genomes_controls_FIN_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_controls_FIN_AN": {
       "type": "long"
@@ -2890,7 +3130,13 @@
       "type": "long"
     },
     "gnomAD_genomes_controls_NFE_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_controls_NFE_AN": {
       "type": "long"
@@ -2902,7 +3148,13 @@
       "type": "long"
     },
     "gnomAD_genomes_controls_POPMAX_AF": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_controls_POPMAX_AN": {
       "type": "long"
@@ -2914,34 +3166,1195 @@
       "type": "long"
     },
     "gnomAD_genomes_flag": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "gnomAD_genomes_nhomalt": {
       "type": "long"
     },
-    "network_hub": {
-      "type": "text"
+    "clinvar_MedGen_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
-    "pos": {
+    "clinvar_OMIM_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "clinvar_Orphanet_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "clinvar_clnsig": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "clinvar_hgvs": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "clinvar_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "clinvar_review": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "clinvar_trait": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "clinvar_var_source": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "COSMIC_CNT": {
       "type": "long"
     },
-    "ref": {
-      "type": "text"
+    "COSMIC_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GWAS_catalog_OR": {
+      "type": "float"
+    },
+    "GWAS_catalog_pubmedid": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GWAS_catalog_rs": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GWAS_catalog_trait": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GRASP_PMID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GRASP_ancestry": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GRASP_p-value": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GRASP_phenotype": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GRASP_platform": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GRASP_rs": {
+      "type": "long"
+    },
+    "ALSPAC_AC": {
+      "type": "long"
+    },
+    "ALSPAC_AF": {
+      "type": "float"
+    },
+    "ALSPAC_AN": {
+      "type": "long"
+    },
+    "APPRIS": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Aloft_Confidence": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Aloft_Fraction_transcripts_affected": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Aloft_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Aloft_prob_Dominant": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Aloft_prob_Recessive": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Aloft_prob_Tolerant": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "CADD_phred": {
+      "type": "float"
+    },
+    "CADD_raw": {
+      "type": "float"
+    },
+    "CADD_raw_rankscore": {
+      "type": "float"
+    },
+    "DEOGEN2_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "DEOGEN2_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "DEOGEN2_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ENCODE_Dnase_cells": {
+      "type": "long"
+    },
+    "ENCODE_Dnase_score": {
+      "type": "long"
+    },
+    "ENCODE_TFBS": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ENCODE_TFBS_cells": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ENCODE_TFBS_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ENCODE_annotated": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Ensembl_Regulatory_Build_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Ensembl_Regulatory_Build_TFBS": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Ensembl_Regulatory_Build_TFBS_matrix": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Ensembl_Regulatory_Build_feature_type": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Ensembl_geneid": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Ensembl_proteinid": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Ensembl_transcriptid": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FANTOM5_CAGE_peak_permissive": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FANTOM5_CAGE_peak_robust": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FANTOM5_enhancer_differentially_expressed_tissue_cell": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FANTOM5_enhancer_expressed_tissue_cell": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FANTOM5_enhancer_permissive": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FANTOM5_enhancer_robust": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FANTOM5_enhancer_target": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FATHMM_converted_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FATHMM_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "FATHMM_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GENCODE_basic": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GERP_NR": {
+      "type": "float"
+    },
+    "GERP_RS": {
+      "type": "float"
+    },
+    "GERP_RS_rankscore": {
+      "type": "float"
+    },
+    "GTEx_V7_gene": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "GTEx_V7_tissue": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "LRT_Omega": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "LRT_converted_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "LRT_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "LRT_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "M-CAP_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "M-CAP_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "M-CAP_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MPC_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MPC_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MVP_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MVP_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MetaLR_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MetaLR_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MetaLR_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MetaSVM_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MetaSVM_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MetaSVM_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Motif_breaking": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutPred_AAchange": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutPred_Top5features": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutPred_protID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutPred_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutPred_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationAssessor_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationAssessor_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationAssessor_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationTaster_AAE": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationTaster_converted_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationTaster_model": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationTaster_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "MutationTaster_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ORegAnno_PMID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "ORegAnno_type": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "PROVEAN_converted_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "PROVEAN_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "PROVEAN_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "PrimateAI_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "PrimateAI_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "PrimateAI_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "RegulomeDB_motif": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "RegulomeDB_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Reliability_index": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SIFT4G_converted_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SIFT4G_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SIFT4G_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SIFT_converted_rankscore": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SIFT_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "SIFT_score": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "TSL": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "TWINSUK_AC": {
+      "type": "long"
+    },
+    "TWINSUK_AF": {
+      "type": "float"
+    },
+    "TWINSUK_AN": {
+      "type": "long"
+    },
+    "TargetScan_context++_score_percentile": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "UTR3_miRNA_target": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Uniprot_acc": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "Uniprot_entry": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "aaalt": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "aapos": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "aaref": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "cds_strand": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "codon_degeneracy": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "codonpos": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "fathmm-MKL_coding_group": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "fathmm-MKL_coding_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "fathmm-MKL_coding_rankscore": {
+      "type": "float"
+    },
+    "fathmm-MKL_coding_score": {
+      "type": "float"
+    },
+    "fathmm-MKL_non-coding_group": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "fathmm-MKL_non-coding_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "fathmm-MKL_non-coding_rankscore": {
+      "type": "float"
+    },
+    "fathmm-MKL_non-coding_score": {
+      "type": "float"
+    },
+    "fathmm-XF_coding_or_noncoding": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "fathmm-XF_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "fathmm-XF_rankscore": {
+      "type": "float"
+    },
+    "fathmm-XF_score": {
+      "type": "float"
+    },
+    "funseq_noncoding_score": {
+      "type": "long"
+    },
+    "genename": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
+    },
+    "network_hub": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "refcodon": {
-      "type": "text"
-    },
-    "rs_dbSNP151": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "sensitive": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "sno_miRNA_name": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "sno_miRNA_type": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "splicing_consensus_ada_score": {
       "type": "float"
@@ -2950,10 +4363,22 @@
       "type": "float"
     },
     "target_gene": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     },
     "ultra_sensitive": {
-      "type": "text"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 1000
+        }
+      }
     }
   }
 }
