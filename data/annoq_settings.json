@@ -1,5 +1,11 @@
 {
+  "index.mapping.total_fields.limit": 2000,
   "number_of_shards": 5,
-  "number_of_replicas" : 0,
-  "refresh_interval" : -1
+  "number_of_replicas": 0,
+  "refresh_interval": -1,
+  "index": {
+    "blocks": {
+      "read_only_allow_delete": "false"
+    }
+  }
 }
