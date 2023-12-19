@@ -1,14 +1,8 @@
 #!/bin/bash 
 
-
-in_dir='./../WGSA_add/output/hrc_sample'
-out_dir='output/hrc_es_jsons'
-slurm_dir='slurm'
-
-#local testing
-#in_dir='./../annoq-data/hrc-test'
-#out_dir='./../annoq-data/tmp11_'
-#slurm_dir='./../annoq-data/slurm2'
+in_dir='./../annoq-data/hrc-test'
+out_dir='./../annoq-data/tmp11_'
+slurm_dir='./../annoq-data/slurm2'
 
 mkdir -p $slurm_dir
 mkdir -p $out_dir

@@ -5,7 +5,6 @@ import os
 import argparse
 import shutil
 import json
-import shutil
 from os import path as ospath
 
 def main():
@@ -53,7 +52,7 @@ def tmp_print(*argv):
 def parse_line(line, data_parser, header):
     d = {}
     for idx in range(len(header)):
-        if idx >= len(line) or line[idx] == ".":            
+        if idx >= len(line) or line[idx] == "":            
             continue
         k = header[idx]
         try:
@@ -122,7 +121,7 @@ def convert_file(in_filepath, out_dir, es_index):
                 da_list.append(data)
             except:
                 error.write(cols)
-            if count % 50000 == 0:
+            if count % 100000 == 0:
                 write_to_json(ospath.join(out_dir, str(out_filename) + '.json'), da_list)
                 out_filename += 1
                 da_list = []
@@ -139,7 +138,8 @@ if __name__=='__main__':
     start_time = time.time()
     tmp_print.l = 0
 
-    main()
+    #main()
     
     find_error = init_find_error()
     start_time = time.time()
+        

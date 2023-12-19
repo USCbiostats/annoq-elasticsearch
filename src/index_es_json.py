@@ -39,7 +39,7 @@ def bulk_load_parallel(directory):
 
 def bulk_load(directory):
    
-    helpers.bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, chunk_size=5000, request_timeout=1000)
+    helpers.bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, chunk_size=10000, request_timeout=1000)
  
 
 def bulk_load_streaming(directory):
