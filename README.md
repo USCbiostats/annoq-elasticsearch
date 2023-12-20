@@ -7,10 +7,15 @@ Scripts for load data and Elasticsearch mapping of AnnoQ
 * ./data/doc_type.pkl
 * ./data/annoq_mapping.json
 
-## Running 
+## Converting and Indexing Elasticsearch
 
-1. install packages in requirment.txt
-2. make ES settings in `setup_es.py` and `create_index.sh`
-3. run `sh create_index.sh` to create index
-4. run `python3 reinit.py` to load mapping
-5. set data dir in import.sh and run `sh import.sh`
+### Converting
+
+1. install packages in requirement.txt
+2. convert the resulting wgsa_add PANTHER and ENHANCER vcf or tsc files to json
+3. use run_jobs.sh for production and run_job local for local setup
+
+### Indexing 
+1. run `sh scripts-test-server/create_index.sh` to create index.
+2. run `python3 create_mapping.py` to load mapping
+3. run `python index_es_json.py` to load into elasticsearch
