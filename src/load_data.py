@@ -2,12 +2,12 @@ from elasticsearch import Elasticsearch
 from elasticsearch import helpers
 import fileinput
 import pickle
-from utils import id_gen
 from collections import deque
 import sys
 import time
 from src.config.es import es
 
+from src.utils import id_gen
 
 
 def init_find_error():
