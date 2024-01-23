@@ -51,7 +51,7 @@ def bulk_load_streaming(directory):
 
 if __name__ == "__main__": 
     in_folder = sys.argv[1]
-    bulk_load_parallel(in_folder)
+    bulk_load_streaming(in_folder)
 
 
 #python3 -m src.index_es_json ../../annoq-output/HRC_03_07_19/batch2/

@@ -1,1 +1,1 @@
-curl -X DELETE http://localhost:9200/annoq-test
+curl -X DELETE http://localhost:9200/annoq-annotations-v2
