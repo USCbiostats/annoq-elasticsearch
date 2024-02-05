@@ -7,8 +7,8 @@ it will convert gz file into multiple json files and put them in ./json/[folder/
 import sys
 import time
 import os
-from convert_to_json import convert_file, create_working_dir, delete_working_dir
-from index_es_json import bulk_load
+from src.convert_to_json import convert_file, create_working_dir, delete_working_dir
+from src.index_es_json import bulk_load
 
 in_folder = sys.argv[1]
 

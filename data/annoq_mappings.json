@@ -5,7 +5,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -17,7 +17,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -26,7 +26,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -35,16 +35,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -53,16 +44,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -71,16 +53,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -89,16 +62,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -107,16 +71,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -125,16 +80,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -143,25 +89,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "enhancer_linked_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -170,7 +98,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -179,7 +107,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -188,7 +116,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -197,7 +125,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -206,7 +134,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -215,16 +143,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -233,16 +152,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -251,16 +161,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -269,7 +170,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -278,7 +179,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -287,7 +188,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -296,16 +197,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -314,16 +206,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -332,16 +215,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -350,16 +224,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -368,16 +233,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -386,7 +242,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -395,7 +251,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -404,7 +260,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -413,7 +269,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -422,7 +278,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -431,16 +287,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -449,16 +296,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -467,16 +305,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -485,7 +314,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -494,7 +323,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -503,7 +332,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -512,16 +341,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -530,16 +350,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -548,16 +359,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -566,16 +368,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -584,16 +377,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "ANNOVAR_refseq_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -602,7 +386,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -611,7 +395,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -620,7 +404,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -629,7 +413,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -638,7 +422,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -647,7 +431,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -656,7 +440,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -665,7 +449,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -674,7 +458,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -683,7 +467,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -692,16 +476,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -710,16 +485,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -728,16 +494,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -746,16 +503,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -764,16 +512,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -782,16 +521,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -800,16 +530,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -818,16 +539,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_0_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -836,160 +548,79 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_GO_biological_process_complete_list": {
+    "flanking_10000_GO_biological_process_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_GO_biological_process_complete_list_id": {
+    "flanking_10000_GO_cellular_component_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_GO_cellular_component_complete_list": {
+    "flanking_10000_GO_molecular_function_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_GO_cellular_component_complete_list_id": {
+    "flanking_10000_PANTHER_GO_SLIM_biological_process_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_GO_molecular_function_complete_list": {
+    "flanking_10000_PANTHER_GO_SLIM_cellular_component_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_GO_molecular_function_complete_list_id": {
+    "flanking_10000_PANTHER_GO_SLIM_molecular_function_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_PANTHER_GO_SLIM_biological_process_list": {
+    "flanking_10000_PANTHER_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
-    "flanking_1000_PANTHER_GO_SLIM_biological_process_list_id": {
+    "flanking_10000_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_1000_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -998,16 +629,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1016,16 +638,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1034,16 +647,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1052,16 +656,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1070,16 +665,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1088,16 +674,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1106,16 +683,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "flanking_20000_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1124,7 +692,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1133,7 +701,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1142,7 +710,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1151,7 +719,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1160,7 +728,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1169,7 +737,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1178,7 +746,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1187,7 +755,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1196,16 +764,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1214,16 +773,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1232,16 +782,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1250,7 +791,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1259,7 +800,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1268,7 +809,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1277,7 +818,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1286,7 +827,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1295,7 +836,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1304,7 +845,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1313,7 +854,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1322,16 +863,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1340,16 +872,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1358,16 +881,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1376,16 +890,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1394,7 +899,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1403,7 +908,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1412,16 +917,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_ensembl_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1430,7 +926,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1439,7 +935,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1448,7 +944,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1457,7 +953,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1466,7 +962,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1475,7 +971,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1484,7 +980,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1493,7 +989,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1502,7 +998,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1511,7 +1007,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1520,7 +1016,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1529,16 +1025,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1547,16 +1034,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1565,16 +1043,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1583,7 +1052,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1592,7 +1061,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1601,7 +1070,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1610,7 +1079,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1619,7 +1088,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1628,7 +1097,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1637,7 +1106,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1646,7 +1115,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1655,16 +1124,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1673,16 +1133,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1691,16 +1142,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1709,16 +1151,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1727,7 +1160,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1736,7 +1169,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1745,16 +1178,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "VEP_refseq_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1763,7 +1187,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1772,7 +1196,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1781,7 +1205,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1790,7 +1214,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1799,7 +1223,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1808,7 +1232,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1817,7 +1241,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1826,7 +1250,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1835,7 +1259,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1844,16 +1268,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1862,16 +1277,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1880,16 +1286,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1898,7 +1295,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1907,7 +1304,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1916,7 +1313,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1925,7 +1322,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1934,7 +1331,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1943,7 +1340,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1952,7 +1349,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1961,7 +1358,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1970,7 +1367,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1979,16 +1376,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -1997,16 +1385,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2015,16 +1394,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2033,16 +1403,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2051,7 +1412,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2060,16 +1421,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_ensembl_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2078,7 +1430,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2087,7 +1439,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2096,7 +1448,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2105,7 +1457,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2114,7 +1466,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2123,7 +1475,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2132,7 +1484,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2141,7 +1493,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2150,7 +1502,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2159,7 +1511,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2168,7 +1520,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2177,7 +1529,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2186,7 +1538,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2195,7 +1547,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2204,7 +1556,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2213,16 +1565,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_GO_biological_process_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2231,16 +1574,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_GO_cellular_component_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2249,16 +1583,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_GO_molecular_function_complete_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2267,7 +1592,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2276,7 +1601,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2285,7 +1610,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2294,7 +1619,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2303,7 +1628,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2312,7 +1637,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2321,7 +1646,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2330,7 +1655,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2339,7 +1664,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2348,16 +1673,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2366,16 +1682,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2384,16 +1691,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2402,16 +1700,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2420,7 +1709,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2429,16 +1718,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
-        }
-      }
-    },
-    "SnpEff_refseq_REACTOME_pathway_list": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2447,7 +1727,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2456,7 +1736,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2465,7 +1745,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2474,7 +1754,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2483,7 +1763,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2492,7 +1772,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2501,7 +1781,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2510,7 +1790,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2600,7 +1880,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2612,7 +1892,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2678,7 +1958,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2696,7 +1976,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2714,7 +1994,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2744,7 +2024,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2807,7 +2087,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2825,7 +2105,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2843,7 +2123,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2873,7 +2153,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2903,7 +2183,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2936,7 +2216,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2957,7 +2237,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2975,7 +2255,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -2993,7 +2273,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3023,7 +2303,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3059,7 +2339,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3080,7 +2360,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3098,7 +2378,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3116,7 +2396,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3134,7 +2414,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3152,7 +2432,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3170,7 +2450,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3182,7 +2462,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3191,7 +2471,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3200,7 +2480,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3209,7 +2489,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3218,7 +2498,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3227,7 +2507,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3236,7 +2516,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3245,7 +2525,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3254,7 +2534,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3266,7 +2546,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3278,7 +2558,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3287,7 +2567,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3296,7 +2576,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3305,7 +2585,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3314,7 +2594,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3323,7 +2603,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3332,7 +2612,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3341,7 +2621,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3362,7 +2642,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3371,7 +2651,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3380,7 +2660,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3389,7 +2669,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3398,7 +2678,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3407,7 +2687,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3416,7 +2696,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3434,7 +2714,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3443,7 +2723,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3452,7 +2732,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3467,7 +2747,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3476,7 +2756,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3485,7 +2765,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3494,7 +2774,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3503,7 +2783,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3512,7 +2792,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3521,7 +2801,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3530,7 +2810,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3539,7 +2819,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3548,7 +2828,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3557,7 +2837,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3566,7 +2846,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3575,7 +2855,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3584,7 +2864,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3593,7 +2873,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3602,7 +2882,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3611,7 +2891,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3620,7 +2900,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3629,7 +2909,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3638,7 +2918,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3647,7 +2927,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3656,7 +2936,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3674,7 +2954,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3683,7 +2963,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3692,7 +2972,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3701,7 +2981,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3710,7 +2990,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3719,7 +2999,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3728,7 +3008,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3737,7 +3017,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3746,7 +3026,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3755,7 +3035,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3764,7 +3044,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3773,7 +3053,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3782,7 +3062,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3791,7 +3071,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3800,7 +3080,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3809,7 +3089,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3818,7 +3098,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3827,7 +3107,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3836,7 +3116,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3845,7 +3125,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3854,7 +3134,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3863,7 +3143,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3872,7 +3152,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3881,7 +3161,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3890,7 +3170,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3899,7 +3179,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3908,7 +3188,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3917,7 +3197,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3926,7 +3206,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3935,7 +3215,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3944,7 +3224,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3953,7 +3233,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3962,7 +3242,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3971,7 +3251,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3980,7 +3260,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3989,7 +3269,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -3998,7 +3278,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4007,7 +3287,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4016,7 +3296,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4025,7 +3305,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4034,7 +3314,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4043,7 +3323,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4052,7 +3332,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4061,7 +3341,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4070,7 +3350,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4079,7 +3359,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4088,7 +3368,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4097,7 +3377,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4106,7 +3386,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4115,7 +3395,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4124,7 +3404,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4142,7 +3422,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4151,7 +3431,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4160,7 +3440,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4169,7 +3449,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4178,7 +3458,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4187,7 +3467,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4196,7 +3476,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4205,7 +3485,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4214,7 +3494,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4223,7 +3503,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4232,7 +3512,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4241,7 +3521,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4256,7 +3536,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4265,7 +3545,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4280,7 +3560,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4289,7 +3569,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4307,7 +3587,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4316,7 +3596,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4325,7 +3605,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4334,7 +3614,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4343,7 +3623,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4352,7 +3632,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4367,7 +3647,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     },
@@ -4376,7 +3656,7 @@
       "fields": {
         "keyword": {
           "type": "keyword",
-          "ignore_above": 1000
+          "ignore_above": 10000
         }
       }
     }

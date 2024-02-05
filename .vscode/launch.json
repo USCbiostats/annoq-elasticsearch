@@ -1,0 +1,25 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Debug Convert to JSON",
+      "type": "python",
+      "request": "launch",
+      "module": "src.convert_to_json",
+      "args": [
+        "-i", "../annoq-data-builder/wgsa_add/output/test_vcfs/chr1.vcf",
+        "-o", "output/test_vcfs/chr1.vcf",
+        "--es_index", "annoq-annotations-v2",
+        "--doc_type_file", "data/doc_type.pkl"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+      }
+  },
+  ]
+}
