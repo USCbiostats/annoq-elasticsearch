@@ -32,7 +32,7 @@ def load_json(directory):
 
 def bulk_load_parallel(directory):
 
-    for success, info in helpers.parallel_bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, thread_count=10, chunk_size=5000, max_retries=10, request_timeout=200):
+    for success, info in helpers.parallel_bulk(es, load_json(directory), index=settings.ANNOQ_ANNOTATIONS_INDEX, thread_count=5, chunk_size=2000, max_retries=10, request_timeout=50, queue_size=10):
         if not success:
             logging.error('A document failed:', info)
 
