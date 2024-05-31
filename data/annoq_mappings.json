@@ -3659,6 +3659,231 @@
           "ignore_above": 10000
         }
       }
+    },
+    "enhancer_linked_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_refseq_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_ANNOVAR_ensembl_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Ensembl_mapped_to_ANNOVAR_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_ANNOVAR_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "flanking_0_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "flanking_10000_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Ensembl_mapped_to_0_flanking_region": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_0_flanking_region": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Ensembl_mapped_to_10000_flanking_region": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_10000_flanking_region": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Ensembl_mapped_to_20000_flanking_region": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_20000_flanking_region": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_VEP_ensembl_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Ensembl_mapped_to_VEP_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_VEP_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_protein_class_list_id\t": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_SnpEff_ensembl_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Ensembl_mapped_to_SnpEff_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "Uniprot_mapped_to_SnpEff_refseq_Gene_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
     }
   }
 }
