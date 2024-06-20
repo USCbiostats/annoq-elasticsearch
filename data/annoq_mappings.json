@@ -102,6 +102,15 @@
         }
       }
     },
+    "enhancer_linked_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
     "enhancer_linked_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
@@ -3742,141 +3751,6 @@
       }
     },
     "ultra_sensitive": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_ANNOVAR_ensembl_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Ensembl_mapped_to_ANNOVAR_refseq_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_ANNOVAR_refseq_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Ensembl_mapped_to_0_flanking_region": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_0_flanking_region": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Ensembl_mapped_to_10000_flanking_region": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_10000_flanking_region": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Ensembl_mapped_to_20000_flanking_region": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_20000_flanking_region": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_VEP_ensembl_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Ensembl_mapped_to_VEP_refseq_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_VEP_refseq_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_SnpEff_ensembl_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Ensembl_mapped_to_SnpEff_refseq_Gene_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "Uniprot_mapped_to_SnpEff_refseq_Gene_ID": {
       "type": "text",
       "fields": {
         "keyword": {
