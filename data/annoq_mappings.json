@@ -93,6 +93,24 @@
         }
       }
     },
+    "enhancer_linked_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "enhancer_linked_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
     "enhancer_linked_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
@@ -147,33 +165,6 @@
         }
       }
     },
-    "ANNOVAR_ensembl_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "ANNOVAR_ensembl_Gene_ID": {
       "type": "text",
       "fields": {
@@ -193,6 +184,51 @@
       }
     },
     "ANNOVAR_ensembl_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_ensembl_GO_molecular_function_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -228,6 +264,15 @@
         }
       }
     },
+    "ANNOVAR_ensembl_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
     "ANNOVAR_ensembl_PANTHER_pathway_list_id": {
       "type": "text",
       "fields": {
@@ -238,24 +283,6 @@
       }
     },
     "ANNOVAR_ensembl_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_Transcript_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_ensembl_summary": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -291,33 +318,6 @@
         }
       }
     },
-    "ANNOVAR_refseq_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_refseq_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "ANNOVAR_refseq_Gene_ID": {
       "type": "text",
       "fields": {
@@ -337,6 +337,51 @@
       }
     },
     "ANNOVAR_refseq_HGVSp": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_refseq_Transcript_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_refseq_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ANNOVAR_refseq_GO_molecular_function_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -372,6 +417,15 @@
         }
       }
     },
+    "ANNOVAR_refseq_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
     "ANNOVAR_refseq_PANTHER_pathway_list_id": {
       "type": "text",
       "fields": {
@@ -382,24 +436,6 @@
       }
     },
     "ANNOVAR_refseq_REACTOME_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_refseq_Transcript_ID": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "ANNOVAR_refseq_summary": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -534,6 +570,15 @@
         }
       }
     },
+    "flanking_0_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
     "flanking_0_PANTHER_pathway_list_id": {
       "type": "text",
       "fields": {
@@ -606,6 +651,15 @@
         }
       }
     },
+    "flanking_10000_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
     "flanking_10000_PANTHER_pathway_list_id": {
       "type": "text",
       "fields": {
@@ -670,6 +724,15 @@
       }
     },
     "flanking_20000_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "flanking_20000_PANTHER_protein_class_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -768,33 +831,6 @@
         }
       }
     },
-    "VEP_ensembl_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_ensembl_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_ensembl_GO_molecular_function_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "VEP_ensembl_Gene_ID": {
       "type": "text",
       "fields": {
@@ -867,42 +903,6 @@
         }
       }
     },
-    "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_ensembl_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "VEP_ensembl_Protein_ID": {
       "type": "text",
       "fields": {
@@ -913,15 +913,6 @@
       }
     },
     "VEP_ensembl_Protein_position": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_ensembl_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -967,6 +958,87 @@
       }
     },
     "VEP_ensembl_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_ensembl_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1021,33 +1093,6 @@
       }
     },
     "VEP_refseq_Exon_or_Intron_Rank": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_GO_molecular_function_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1128,42 +1173,6 @@
         }
       }
     },
-    "VEP_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "VEP_refseq_Protein_ID(ENSP)": {
       "type": "text",
       "fields": {
@@ -1174,15 +1183,6 @@
       }
     },
     "VEP_refseq_Protein_position": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1219,6 +1219,87 @@
       }
     },
     "VEP_refseq_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1264,33 +1345,6 @@
       }
     },
     "SnpEff_ensembl_Exon_or_intron_rank/total": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_ensembl_GO_molecular_function_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1380,52 +1434,7 @@
         }
       }
     },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_ensembl_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "SnpEff_ensembl_Protein_position/Protein_len": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_ensembl_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1524,6 +1533,87 @@
         }
       }
     },
+    "SnpEff_ensembl_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_protein_class_list_id\t": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_ensembl_REACTOME_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
     "SnpEff_refseq_CDS_position/CDS_len": {
       "type": "text",
       "fields": {
@@ -1561,33 +1651,6 @@
       }
     },
     "SnpEff_refseq_Exon_or_intron_rank/total": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_refseq_GO_biological_process_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_refseq_GO_cellular_component_complete_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_refseq_GO_molecular_function_complete_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1677,52 +1740,7 @@
         }
       }
     },
-    "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_refseq_PANTHER_pathway_list_id": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "SnpEff_refseq_Protein_position/Protein_len": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "SnpEff_refseq_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -1786,6 +1804,87 @@
       }
     },
     "SnpEff_refseq_summary": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_biological_process_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_cellular_component_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_GO_molecular_function_complete_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_protein_class_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_PANTHER_pathway_list_id": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_REACTOME_pathway_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
