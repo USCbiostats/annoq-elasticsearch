@@ -30,15 +30,6 @@
         }
       }
     },
-    "rs_dbSNP151": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "enhancer_linked_GO_biological_process_complete_list_id": {
       "type": "text",
       "fields": {
@@ -1165,15 +1156,6 @@
       }
     },
     "VEP_refseq_LoF_info": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "VEP_refseq_Protein_ID(ENSP)": {
       "type": "text",
       "fields": {
         "keyword": {
@@ -2412,138 +2394,6 @@
     "gnomAD_genomes_POPMAX_nhomalt": {
       "type": "long"
     },
-    "gnomAD_genomes_controls_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_AF": {
-      "type": "float"
-    },
-    "gnomAD_genomes_controls_AFR_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_AFR_AF": {
-      "type": "float"
-    },
-    "gnomAD_genomes_controls_AFR_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_AFR_nhomalt": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_AMR_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_AMR_AF": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "gnomAD_genomes_controls_AMR_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_AMR_nhomalt": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_ASJ_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_ASJ_AF": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "gnomAD_genomes_controls_ASJ_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_ASJ_nhomalt": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_EAS_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_EAS_AF": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "gnomAD_genomes_controls_EAS_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_EAS_nhomalt": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_FIN_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_FIN_AF": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "gnomAD_genomes_controls_FIN_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_FIN_nhomalt": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_NFE_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_NFE_AF": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "gnomAD_genomes_controls_NFE_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_NFE_nhomalt": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_POPMAX_AC": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_POPMAX_AF": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "gnomAD_genomes_controls_POPMAX_AN": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_POPMAX_nhomalt": {
-      "type": "long"
-    },
-    "gnomAD_genomes_controls_nhomalt": {
-      "type": "long"
-    },
     "gnomAD_genomes_flag": {
       "type": "text",
       "fields": {
@@ -3048,24 +2898,6 @@
     "GERP_RS_rankscore": {
       "type": "float"
     },
-    "GTEx_V7_gene": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
-    "GTEx_V7_tissue": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
-    },
     "LRT_Omega": {
       "type": "text",
       "fields": {
@@ -3283,13 +3115,7 @@
       }
     },
     "MutationAssessor_rankscore": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 10000
-        }
-      }
+      "type": "float"
     },
     "MutationAssessor_score": {
       "type": "text",
@@ -3751,6 +3577,1077 @@
       }
     },
     "ultra_sensitive": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "chr_hg19": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "pos_hg19": {
+      "type": "long"
+    },
+    "ref_hg19": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "alt_hg19": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "ref_hg19=ref_hg38": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_TF_binding_effect": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_TF_name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SnpEff_refseq_TF_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "VEP_refseq_Protein_ID": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "rs_dbSNP": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SPIDEX_dpsi_max_tissue": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "SPIDEX_dpsi_zscore": {
+      "type": "float"
+    },
+    "GTEx_V8_gene": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "GTEx_V8_tissue": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "gnomAD_exomes_non_neuro_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AFR_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AFR_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AFR_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_AFR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AMR_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AMR_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_AMR_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_AMR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_ASJ_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_ASJ_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_ASJ_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_ASJ_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_EAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_EAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_EAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_EAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_FIN_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_FIN_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_FIN_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_FIN_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_NFE_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_NFE_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_NFE_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_NFE_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_SAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_POPMAX_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_POPMAX_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_neuro_POPMAX_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_neuro_POPMAX_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AFR_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AFR_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AFR_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_AFR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AMR_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AMR_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_AMR_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_AMR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_ASJ_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_ASJ_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_ASJ_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_ASJ_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_EAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_EAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_EAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_EAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_FIN_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_FIN_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_FIN_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_FIN_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_NFE_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_NFE_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_NFE_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_NFE_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_SAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_POPMAX_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_POPMAX_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_cancer_POPMAX_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_cancer_POPMAX_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AFR_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AFR_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AFR_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_AFR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AMR_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AMR_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_AMR_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_AMR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_ASJ_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_ASJ_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_ASJ_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_ASJ_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_EAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_EAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_EAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_EAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_FIN_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_FIN_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_FIN_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_FIN_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_NFE_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_NFE_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_NFE_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_NFE_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_SAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_POPMAX_AC": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_POPMAX_AN": {
+      "type": "long"
+    },
+    "gnomAD_exomes_non_topmed_POPMAX_AF": {
+      "type": "float"
+    },
+    "gnomAD_exomes_non_topmed_POPMAX_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_AMI_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_AMI_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_AMI_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_AMI_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_MID_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_MID_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_MID_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_MID_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_SAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AFR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AFR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AFR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AFR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMI_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMI_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMI_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMI_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_AMR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_ASJ_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_ASJ_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_ASJ_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_ASJ_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_EAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_EAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_EAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_EAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_FIN_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_FIN_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_FIN_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_FIN_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_MID_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_MID_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_MID_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_MID_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_NFE_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_NFE_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_NFE_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_NFE_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_controls_and_biobanks_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_controls_and_biobanks_SAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AFR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AFR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AFR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_AFR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AMI_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AMI_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AMI_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_AMI_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AMR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AMR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_AMR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_AMR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_ASJ_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_ASJ_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_ASJ_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_ASJ_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_EAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_EAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_EAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_EAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_FIN_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_FIN_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_FIN_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_FIN_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_MID_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_MID_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_MID_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_MID_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_NFE_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_NFE_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_NFE_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_NFE_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_neuro_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_neuro_SAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AFR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AFR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AFR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_AFR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AMI_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AMI_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AMI_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_AMI_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AMR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AMR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_AMR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_AMR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_ASJ_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_ASJ_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_ASJ_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_ASJ_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_EAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_EAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_EAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_EAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_FIN_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_FIN_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_FIN_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_FIN_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_MID_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_MID_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_MID_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_MID_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_NFE_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_NFE_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_NFE_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_NFE_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_cancer_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_cancer_SAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AFR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AFR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AFR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_AFR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AMI_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AMI_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AMI_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_AMI_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AMR_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AMR_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_AMR_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_AMR_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_ASJ_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_ASJ_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_ASJ_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_ASJ_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_EAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_EAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_EAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_EAS_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_FIN_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_FIN_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_FIN_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_FIN_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_MID_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_MID_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_MID_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_MID_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_NFE_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_NFE_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_NFE_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_NFE_nhomalt": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_SAS_AC": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_SAS_AN": {
+      "type": "long"
+    },
+    "gnomAD_genomes_non_topmed_SAS_AF": {
+      "type": "float"
+    },
+    "gnomAD_genomes_non_topmed_SAS_nhomalt": {
+      "type": "long"
+    },
+    "Ensembl_Regulatory_Build_TFBS_evidence": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "HGVSc_ANNOVAR": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "HGVSp_ANNOVAR": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "HGVSc_snpEff": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "HGVSp_snpEff": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "HGVSc_VEP": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "HGVSp_VEP": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "MetaRNN_score": {
+      "type": "float"
+    },
+    "MetaRNN_rankscore": {
+      "type": "float"
+    },
+    "MetaRNN_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "BayesDel_addAF_score": {
+      "type": "float"
+    },
+    "BayesDel_addAF_rankscore": {
+      "type": "float"
+    },
+    "BayesDel_addAF_pred": {
+      "type": "tet"
+    },
+    "BayesDel_noAF_score": {
+      "type": "float"
+    },
+    "BayesDel_noAF_rankscore": {
+      "type": "float"
+    },
+    "BayesDel_noAF_pred": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
+    },
+    "LIST-S2_score": {
+      "type": "float"
+    },
+    "LIST-S2_rankscore": {
+      "type": "float"
+    },
+    "LIST-S2_pred": {
       "type": "text",
       "fields": {
         "keyword": {
