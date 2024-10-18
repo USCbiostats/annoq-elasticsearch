@@ -4612,7 +4612,13 @@
       }
     },
     "MetaRNN_rankscore": {
-      "type": "float"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
     },
     "MetaRNN_pred": {
       "type": "text",
@@ -4663,7 +4669,13 @@
       }
     },
     "LIST-S2_rankscore": {
-      "type": "float"
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 10000
+        }
+      }
     },
     "LIST-S2_pred": {
       "type": "text",
