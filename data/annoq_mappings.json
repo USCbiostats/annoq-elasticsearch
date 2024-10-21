@@ -1587,7 +1587,7 @@
         }
       }
     },
-    "SnpEff_ensembl_PANTHER_protein_class_list_id\t": {
+    "SnpEff_ensembl_PANTHER_protein_class_list_id": {
       "type": "text",
       "fields": {
         "keyword": {
