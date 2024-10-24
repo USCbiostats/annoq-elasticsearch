@@ -48,7 +48,7 @@ def tmp_print(*argv):
 def parse_line(line, data_parser, header):
     d = {}
     for idx, key in enumerate(header):
-        if idx < len(line) and line[idx] != "":
+        if idx < len(line) and line[idx] != "" and key in data_parser:
             try:
                 d[key] = data_parser.get(key, str)(line[idx])
             except Exception as e:
