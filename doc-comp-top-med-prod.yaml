@@ -47,9 +47,6 @@ services:
       - data02:/usr/share/elasticsearch/data
     networks:
       - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300
 
   es03:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.16.1
@@ -72,9 +69,7 @@ services:
       - data03:/usr/share/elasticsearch/data
     networks:
       - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300      
+  
 
   es04:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.16.1
@@ -97,9 +92,6 @@ services:
       - data04:/usr/share/elasticsearch/data
     networks:
       - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300
 
   es05:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.16.1
@@ -121,10 +113,7 @@ services:
     volumes:
       - data05:/usr/share/elasticsearch/data
     networks:
-      - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300      
+      - elastic   
 
 
   es06:
@@ -147,10 +136,7 @@ services:
     volumes:
       - data06:/usr/share/elasticsearch/data
     networks:
-      - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300            
+      - elastic       
 
 
   es07:
@@ -173,10 +159,7 @@ services:
     volumes:
       - data07:/usr/share/elasticsearch/data
     networks:
-      - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300            
+      - elastic         
 
 
   es08:
@@ -199,10 +182,7 @@ services:
     volumes:
       - data08:/usr/share/elasticsearch/data
     networks:
-      - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300            
+      - elastic          
 
 
   es09:
@@ -225,10 +205,7 @@ services:
     volumes:
       - data09:/usr/share/elasticsearch/data
     networks:
-      - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300            
+      - elastic          
 
 
   es10:
@@ -252,9 +229,6 @@ services:
       - data10:/usr/share/elasticsearch/data
     networks:
       - elastic
-    ports:
-      - 9200:9200
-      - 9300:9300 
 
 
 
