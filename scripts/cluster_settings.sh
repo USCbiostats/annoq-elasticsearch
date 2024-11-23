@@ -1,4 +1,4 @@
-host="http://bioghost2.usc.edu:9200"
+host="http://bioghost3.usc.edu:9200"
 
 curl -XPUT -H "Content-Type: application/json" $host/_cluster/settings -d '
 { "persistent": { "cluster.routing.allocation.disk.threshold_enabled": false } }'
