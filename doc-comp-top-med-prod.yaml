@@ -274,6 +274,10 @@ services:
       - source: kibana_config
         target: /usr/share/kibana/config/kibana.yml
 
+configs:
+  kibana_config:
+    file: ./kibana/config/kibana.yml
+
 
 volumes:
   data01:
