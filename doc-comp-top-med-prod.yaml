@@ -1,4 +1,4 @@
-name: Annoq Docker Elasticsearch compose file
+name: Annoq TopMed Data
 
 services:
   es01:
@@ -258,70 +258,70 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data02:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data03:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data04:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data05:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data06:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data07:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data08:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
       
   data09:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
   data10:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volumne/docker
+      device: /annoq/prod_volume/docker
       o: bind
 
 
