@@ -258,70 +258,70 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d01
       o: bind
 
   data02:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d02
       o: bind
 
   data03:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d03
       o: bind
 
   data04:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d04
       o: bind
 
   data05:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d05
       o: bind
 
   data06:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d06
       o: bind
 
   data07:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d07
       o: bind
 
   data08:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d08
       o: bind
       
   data09:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d09
       o: bind
 
   data10:
     driver: local
     driver_opts:
       type: none
-      device: /annoq/prod_volume/docker
+      device: /annoq/prod_volume/docker/d10
       o: bind
 
 
