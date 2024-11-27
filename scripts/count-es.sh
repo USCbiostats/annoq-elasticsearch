@@ -1,1 +1,1 @@
-curl -X GET http://localhost:9200/annoq-annotations-v2/_count
+curl -X GET http://localhost:9200/annoq-annotations-v4/_count
