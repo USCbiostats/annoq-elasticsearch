@@ -1,4 +1,6 @@
 import pickle
+import math
+from numbers import Number
 import time
 import os
 import argparse
@@ -51,6 +53,10 @@ def parse_line(line, data_parser, header):
         if idx < len(line) and line[idx] != "" and key in data_parser:
             try:
                 d[key] = data_parser.get(key, str)(line[idx])
+                #Infinity is not valid in JSON.  Therefore, ensure it is not generated
+                if isinstance(d[key], Number) and math.isinf(d[key]):
+                    print('Skipping value infinite', key, line[idx], d[key])
+                    del d[key]
             except Exception as e:
                 print('Parse error:', key, line[idx], data_parser.get(key, str))
                 d[key] = str(line[idx])
